@@ -1,0 +1,116 @@
+.flip-container {
+	perspective: 1000;
+}
+.flipper {
+  margin: auto;
+  padding: 50px;
+  width: 300px;
+  height:500px;
+  position: relative;
+  background: #312f3ae0;
+  border-radius: 50px;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+}
+
+.front, .back {
+  position: absolute;
+  padding:10px 30px;
+  top: 0;
+  left: 0;
+  right: 0;
+  backface-visibility: hidden;
+}
+
+.front{
+	z-index: 2;
+}
+
+.back{
+    transform: rotateY(180deg);
+}
+.flip{
+		transform: rotateY(180deg);
+}
+input{
+    width:100%;
+    margin-bottom:50px;
+    margin-top: 20px;
+    height:40px;
+    box-sizing: border-box;
+    padding:10px;
+}
+input:focus{
+    outline: 2px solid;
+    outline-color: rgb(0, 217, 255);
+}
+/* .title{
+  text-align: center;
+  color: white;
+} */
+.title {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    animation: pulse 5s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      color: #ffffff;
+    }
+    100% {
+      color: #c78a88;
+    }
+  }
+  
+.flipbutton{
+    width: 180px;
+    margin-left: 22%;
+    border-radius: 111px;
+    height: 50px;
+    background-color: #64BCF4;
+}
+.flipbutton:hover{
+    color: white;
+    background-color: #c78a88;
+    cursor: pointer;
+}
+body, html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #64bdf4b2;  
+}
+.btn-func{
+    border-radius: 111px;
+    background-color: #64BCF4;
+    width: 180px;
+    margin-left: 22%;
+}
+.btn-func:hover{
+    color: white;
+    background-color: #c78a88;
+    cursor: pointer;
+}
+body {
+    width: 100%;
+    height: 100%;
+    animation: any 10s infinite;
+  }
+  
+  @keyframes any {
+    0% {
+      background-color: #64bdf433;
+    }
+    100% {
+      background-color: #64BCF4;
+    }
+  }
+  .special-btn{
+      margin-top: 60px;
+  }

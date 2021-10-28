@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+ <body>
+   <div class="flip-container">
+      <div class="flipper" id="flipper">
+         <div class="front">
+            <h1 class="title">Login</h1>
+            <form>
+                     <input type="text" placeholder="Email" />
+                     <input type="password" placeholder="Password" />
+                     <input type="submit" value="Login" class="btn-func">
+            </form>
+            <!-- <a class="flipbutton" id="loginButton" href="#">Create my account →</a> -->
+            <button type="button" class="flipbutton special-btn" id="loginButton" href="#">Create Acount</button>
+         </div>
+         
+         <div class="back">
+            <h1 class="title" id="title">Register</h1>
+            <form>
+                  <input type="text" placeholder="Username" />
+                  <input type="email" placeholder="Email" />
+                  <input type="password" placeholder="Password" />
+                  <input type="submit" value="Sign up" class="btn-func">
+            </form>
+            <!-- <a class="flipbutton" id="registerButton" href="#">Login </a> -->
+            <button type="button" class="flipbutton" id="registerButton" href="#">SignIn</button>
+         </div>
+      </div>
+      </div>
+  </div>
+  <script src="js/main.js"></script>
+ </body>
+</html>
